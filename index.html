@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FFF8F1">
+  <meta name="description" content="Ateliê do Bebê: 300 moldes de roupinhas de bebê, do RN aos 2 anos, prontos para imprimir em A4. Conheça os planos e comece a costurar.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ateliê do Bebê | 300 moldes de roupinhas de bebê">
+  <meta property="og:description" content="Bodies, macacões, vestidinhos e muito mais. Moldes organizados para imprimir, cortar e costurar.">
+  <title>Ateliê do Bebê | 300 Moldes de Roupas de Bebê</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,600,25,0;9..144,700,25,0&family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+      --creme: #FFF8F1;
+      --rosa-claro: #F6C9CF;
+      --rosa: #E07A8B;
+      --azul: #CFE4F2;
+      --salvia: #DDE8D5;
+      --texto: #3D3340;
+      --verde: #25A35A;
+      --verde-escuro: #197E45;
+      --branco: #FFFFFF;
+      --linha: #EEDFE0;
+      --radius: 22px;
+      --sombra: 0 14px 38px rgba(83, 54, 66, .07);
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 20px; }
+    body { margin: 0; background: var(--creme); color: var(--texto); font-family: "Nunito", system-ui, sans-serif; font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; }
+    svg { display: block; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    :focus-visible { outline: 3px solid #1B8550; outline-offset: 4px; }
+    .skip-link { position: absolute; top: -70px; left: 12px; padding: 8px 14px; background: #fff; z-index: 99; }
+    .skip-link:focus { top: 12px; }
+    .icon-sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
+    .container { width: min(100% - 36px, 1150px); margin-inline: auto; }
+    .announcement { padding: 10px 16px; text-align: center; background: var(--rosa-claro); color: #7F4654; font-size: 11px; font-weight: 900; line-height: 1.5; letter-spacing: .09em; }
+    .brand-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-block: 22px 6px; }
+    .brand { display: inline-flex; align-items: center; gap: 11px; text-decoration: none; font-family: "Fraunces", Georgia, serif; font-size: 19px; font-weight: 700; letter-spacing: -.04em; line-height: 1; }
+    .brand-mark { display: grid; place-items: center; width: 35px; height: 35px; border-radius: 13px; background: var(--rosa-claro); color: #A74D64; font: 700 23px/1 Georgia, serif; transform: rotate(-8deg); }
+    .brand-note { color: #9D7A82; font-size: 11px; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; }
+    .hero { position: relative; overflow: hidden; padding: 38px 0 58px; }
+    .hero::before { content: ""; position: absolute; z-index: -1; top: 8%; right: -20%; width: 70vw; height: 65vw; max-width: 860px; max-height: 860px; border-radius: 50%; background: radial-gradient(circle, rgba(246,201,207,.37) 0%, rgba(246,201,207,0) 68%); pointer-events: none; }
+    .hero-grid { display: grid; gap: 40px; align-items: center; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 9px; width: fit-content; padding: 6px 13px; border-radius: 100px; background: #FCE7E6; color: #A74D64; font-size: 11px; letter-spacing: .07em; text-transform: uppercase; font-weight: 900; }
+    .eyebrow::before { content: "✦"; font-size: 13px; color: var(--rosa); }
+    h1, h2, h3, p { margin-top: 0; }
+    h1, h2, h3 { font-family: "Fraunces", Georgia, serif; }
+    h1 { max-width: 690px; margin: 20px 0 22px; font-size: clamp(2.65rem, 8.3vw, 4.65rem); font-weight: 700; line-height: 1.075; letter-spacing: -.045em; }
+    h1 .pink { position: relative; color: var(--rosa); white-space: nowrap; }
+    h1 .pink::after { content: ""; position: absolute; bottom: -.07em; left: 1%; right: 0; height: .13em; border-radius: 100%; background: #F6C9CF; transform: rotate(-2deg); z-index: -1; }
+    .hero-desc { max-width: 540px; margin-bottom: 26px; color: #6B5C68; font-size: 16px; line-height: 1.75; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 9px; min-height: 57px; padding: 14px 26px; border: 0; border-radius: 15px; text-align: center; text-decoration: none; text-transform: uppercase; font-family: "Nunito", sans-serif; font-size: 13px; font-weight: 900; letter-spacing: .035em; line-height: 1.35; transition: transform .18s ease, box-shadow .18s ease, background .18s ease; cursor: pointer; }
+    .btn:hover { transform: translateY(-2px); }
+    .btn:active { transform: translateY(3px); box-shadow: none; }
+    .btn-green { color: #fff; background: var(--verde); box-shadow: 0 5px 0 var(--verde-escuro), 0 12px 22px rgba(37,163,90,.15); }
+    .btn-green:hover { background: #229A54; }
+    .btn-blue { color: #2B596E; background: var(--azul); box-shadow: 0 5px 0 #98BED5, 0 10px 18px rgba(71,120,150,.11); }
+    .btn-white { color: #A6435B; background: #fff; box-shadow: 0 5px 0 #F4C7CF, 0 12px 24px rgba(115,38,65,.16); }
+    .btn-full { width: 100%; }
+    .trust { display: flex; align-items: flex-start; gap: 7px; margin-top: 23px; color: #87777E; font-size: 12px; font-weight: 700; line-height: 1.6; }
+    .trust svg { flex: 0 0 auto; width: 17px; height: 17px; margin-top: 2px; color: var(--verde); }
+    .mockup-stage { position: relative; min-width: 0; max-width: 520px; width: 100%; margin-inline: auto; padding: 16px 14px 22px 6px; }
+    .mockup-stage::before { content: ""; position: absolute; inset: 5% 0 0 8%; background: var(--azul); border-radius: 40% 60% 50% 40%; transform: rotate(-7deg); opacity: .5; }
+    .mockup-stage::after { content: "✳"; position: absolute; top: -3%; right: 0; color: #E6ABAE; font-size: 50px; }
+    .mockup-cover { position: relative; overflow: hidden; border: 1px solid #F2DADE; border-radius: 26px; background: #fff; box-shadow: 10px 12px 0 #F6C9CF, 0 28px 70px rgba(124,72,88,.15); padding: 26px 22px 24px; transform: rotate(2deg); }
+    .mockup-cover::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 10px; background: repeating-linear-gradient(90deg, #F6C9CF 0 34px, #DDE8D5 34px 68px, #CFE4F2 68px 102px); }
+    .mockup-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; padding-top: 8px; }
+    .mockup-label { color: #A67C88; font-size: 10px; font-weight: 900; text-transform: uppercase; letter-spacing: .13em; }
+    .mockup-number { margin: 1px 0 -8px; color: var(--rosa); font: 700 clamp(5.5rem, 22vw, 8.6rem)/.95 "Fraunces", Georgia, serif; letter-spacing: -.08em; }
+    .mockup-title { margin: 9px 0 0; max-width: 235px; font: 700 clamp(1.35rem, 4.6vw, 1.9rem)/1.17 "Fraunces", Georgia, serif; letter-spacing: -.035em; }
+    .mockup-sprig { align-self: flex-start; margin-top: 20px; font-size: 47px; transform: rotate(14deg); color: #91B09A; }
+    .mockup-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 9px; margin-top: 21px; }
+    .mockup-tile { display: grid; place-items: center; min-height: 85px; aspect-ratio: 1.03; border: 1px solid #F3E7E7; border-radius: 15px; background: #FFF8F6; color: #A97A84; }
+    .mockup-tile:nth-child(2), .mockup-tile:nth-child(5) { background: #EDF6FA; color: #7D9DAE; }
+    .mockup-tile:nth-child(3), .mockup-tile:nth-child(6) { background: #F1F6EE; color: #819B81; }
+    .garment-icon { width: 66%; max-width: 76px; height: auto; aspect-ratio: 1; }
+    .mockup-bottom { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-top: 17px; }
+    .mini-line { font-size: 11px; color: #9A878D; font-weight: 700; }
+    .seal { display: inline-flex; align-items: center; justify-content: center; padding: 7px 10px; background: #DDE8D5; border-radius: 8px; color: #506E53; font-size: 10px; font-weight: 900; white-space: nowrap; text-transform: uppercase; transform: rotate(-3deg); }
+    .benefits-strip { display: flex; justify-content: center; flex-wrap: wrap; gap: 9px; margin-top: 49px; }
+    .chip { display: inline-flex; align-items: center; gap: 7px; padding: 9px 13px; border: 1px solid #EDE2DC; border-radius: 100px; background: rgba(255,255,255,.8); color: #675C63; font-size: 12px; font-weight: 800; white-space: nowrap; }
+    .chip .tick { color: var(--verde); font-size: 16px; line-height: 1; }
+    .section { padding: 70px 0; }
+    .section-heading { max-width: 750px; margin: 0 auto 36px; text-align: center; }
+    .kicker { margin-bottom: 10px; color: #B36378; font-size: 11px; font-weight: 900; letter-spacing: .15em; text-transform: uppercase; }
+    h2 { margin-bottom: 14px; font-size: clamp(2rem, 6.3vw, 3.25rem); font-weight: 700; line-height: 1.17; letter-spacing: -.04em; }
+    .section-heading > p:last-child { margin: 0; color: #786B73; font-size: 15px; }
+    h3 { font-size: 1.4rem; line-height: 1.22; letter-spacing: -.025em; }
+    .audience-grid { display: grid; gap: 16px; }
+    .audience-card { min-width: 0; padding: 26px 24px; border: 1px solid var(--linha); border-radius: var(--radius); background: #fff; box-shadow: var(--sombra); }
+    .audience-icon { display: grid; place-items: center; width: 50px; height: 50px; margin-bottom: 20px; border-radius: 16px; background: #FFF0F1; color: #C2687D; font-size: 25px; }
+    .audience-card:nth-child(2) .audience-icon { background: #E9F3F8; color: #638DA6; }
+    .audience-card:nth-child(3) .audience-icon { background: #EDF4E9; color: #69946F; }
+    .audience-card h3 { margin: 0 0 11px; }
+    .audience-card p { margin: 0; color: #736873; font-size: 14px; line-height: 1.75; }
+    .catalog { background: #FFFCF9; border-block: 1px solid #F6EBE7; }
+    .catalog-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13px; }
+    .catalog-card { min-width: 0; padding: 16px 9px 14px; border: 1px solid #F0E5E5; border-radius: 20px; background: #fff; text-align: center; box-shadow: 0 8px 20px rgba(67,55,60,.035); }
+    .catalog-icon { display: grid; place-items: center; width: 100%; max-width: 162px; margin: 0 auto 12px; aspect-ratio: 1.25; border-radius: 14px; background: #FCF0F1; color: #B97886; }
+    .catalog-card:nth-child(4n+2) .catalog-icon { background: #EDF6FA; color: #87A9BF; }
+    .catalog-card:nth-child(4n+3) .catalog-icon { background: #EDF3E8; color: #879B81; }
+    .catalog-card:nth-child(4n+4) .catalog-icon { background: #FFF4E5; color: #B79A75; }
+    .catalog-icon .garment-icon { width: 72px; }
+    .catalog-card h3 { margin: 0; font-family: "Nunito", sans-serif; font-size: 14px; font-weight: 900; letter-spacing: 0; }
+    .sizes { margin-top: 33px; text-align: center; }
+    .sizes > p { margin: 0 0 15px; font-weight: 900; font-size: 14px; }
+    .size-list { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; }
+    .size-badge { min-width: 51px; padding: 7px 13px; border-radius: 100px; background: var(--azul); color: #44667D; font-size: 13px; font-weight: 900; }
+    .how { background: var(--salvia); }
+    .steps { display: grid; gap: 24px; }
+    .step { position: relative; padding: 26px 22px 24px; border: 1px solid #D5E1D1; border-radius: var(--radius); background: rgba(255,255,255,.84); text-align: center; }
+    .step-number { display: grid; place-items: center; width: 55px; height: 55px; margin: -6px auto 17px; border-radius: 18px; background: #fff; color: #6D9371; box-shadow: inset 0 0 0 2px #D5E1D1; font: 700 27px/1 "Fraunces", Georgia, serif; }
+    .step h3 { margin: 0 0 10px; }
+    .step p { margin: 0; color: #617066; font-size: 14px; }
+    .difference-grid { display: grid; gap: 34px; align-items: center; }
+    .difference-copy h2 { max-width: 450px; }
+    .difference-copy p { max-width: 510px; color: #786B73; }
+    .difference-list { display: grid; gap: 12px; }
+    .difference-item { display: flex; align-items: center; min-height: 65px; padding: 15px 18px; border-left: 5px solid var(--rosa); border-radius: 0 15px 15px 0; background: white; box-shadow: 0 8px 20px rgba(83,54,66,.04); font-size: 14px; font-weight: 900; }
+    .difference-item::before { content: "✓"; display: grid; place-items: center; width: 24px; height: 24px; flex: 0 0 auto; margin-right: 12px; border-radius: 50%; background: #E5F4E9; color: #218C51; font: 900 14px/1 "Nunito", sans-serif; }
+    .difference-copy .btn { margin-top: 18px; }
+    .bonus-section { background: #FFFCF9; border-block: 1px solid #F6EBE7; }
+    .bonus-grid { display: grid; gap: 14px; }
+    .bonus-card { display: flex; align-items: flex-start; gap: 15px; padding: 22px; border: 1px solid var(--linha); border-radius: var(--radius); background: #fff; box-shadow: 0 9px 24px rgba(83,54,66,.04); }
+    .bonus-featured { position: relative; overflow: hidden; background: #FBE2E5; border-color: #F3C4CC; }
+    .bonus-featured::after { content: "♡"; position: absolute; right: -15px; bottom: -63px; color: rgba(224,122,139,.16); font: 220px/1 Georgia, serif; pointer-events: none; }
+    .bonus-illustration { position: relative; display: grid; place-items: center; flex: 0 0 59px; width: 59px; height: 66px; border-radius: 15px; background: #F8EFF1; color: #B97886; }
+    .bonus-illustration svg { width: 50px; }
+    .bonus-featured .bonus-illustration { background: #fff3f5; color: #B05A70; }
+    .bonus-card:nth-child(3) .bonus-illustration, .bonus-card:nth-child(6) .bonus-illustration { background: #EDF3E8; color: #7A987A; }
+    .bonus-card:nth-child(4) .bonus-illustration { background: #EDF6FA; color: #86A4B8; }
+    .bonus-number { margin: 0 0 3px; color: #B4697E; font-size: 10px; font-weight: 900; letter-spacing: .12em; }
+    .bonus-card h3 { margin: 0 0 6px; font-size: 1.2rem; }
+    .bonus-card p:not(.bonus-number) { margin: 0 0 7px; color: #736873; font-size: 13px; }
+    .bonus-value { font-size: 12px; font-weight: 900; }
+    .bonus-value del { color: #9F8C92; }
+    .bonus-value strong { margin-left: 5px; color: #258C50; font-weight: 900; }
+    .plans-section { scroll-margin-top: 14px; }
+    .plans-grid { display: grid; gap: 20px; align-items: stretch; max-width: 940px; margin: auto; }
+    .plan { position: relative; display: flex; flex-direction: column; padding: 30px 23px 26px; border: 1px solid #E8DEDC; border-radius: 26px; background: #fff; box-shadow: 0 12px 35px rgba(83,54,66,.055); }
+    .plan-complete { order: -1; border: 2px solid var(--rosa); padding-top: 49px; box-shadow: 0 16px 38px rgba(224,122,139,.12); }
+    .plan-ribbon { position: absolute; top: 0; left: 0; right: 0; padding: 8px 13px; border-radius: 22px 22px 0 0; background: var(--rosa); color: white; text-align: center; font-size: 11px; font-weight: 900; letter-spacing: .1em; }
+    .plan-kicker { color: #A98590; font-size: 11px; font-weight: 900; letter-spacing: .14em; text-transform: uppercase; }
+    .plan h3 { margin: 5px 0 8px; font-size: 2rem; }
+    .plan-desc { min-height: 47px; margin-bottom: 23px; color: #847680; font-size: 14px; }
+    .plan-list { display: grid; gap: 11px; margin: 0 0 24px; padding: 0; list-style: none; }
+    .plan-list li { display: flex; align-items: baseline; gap: 9px; font-size: 14px; font-weight: 800; }
+    .plan-list li::before { content: "✓"; flex: 0 0 18px; color: var(--verde); font-weight: 900; }
+    .plan-list li.unavailable { color: #ADA5AC; font-weight: 700; text-decoration: line-through; text-decoration-color: #BFB8BD; }
+    .plan-list li.unavailable::before { content: "×"; color: #BFB7BD; text-decoration: none; }
+    .plan-bottom { margin-top: auto; padding-top: 25px; border-top: 1px solid #F1E8E8; text-align: center; }
+    .old-price { margin: 0; color: #9C8C95; font-size: 15px; font-weight: 800; }
+    .price { margin: 0; font: 700 5.1rem/.98 "Fraunces", Georgia, serif; letter-spacing: -.075em; }
+    .price small { margin-right: 3px; font: 800 24px/1 "Nunito", sans-serif; letter-spacing: -.04em; vertical-align: 13px; }
+    .price-note { margin: 8px 0 22px; color: #766973; font-size: 12px; font-weight: 800; }
+    .checkout-note { min-height: 0; margin: 10px 0 0; color: #A2495C; font-size: 12px; font-weight: 800; text-align: center; }
+    .checkout-note:empty { display: none; }
+    .plans-trust { margin: 25px auto 0; text-align: center; color: #766C73; font-size: 12px; font-weight: 800; }
+    .guarantee-wrap { display: flex; flex-direction: column; align-items: center; gap: 26px; max-width: 860px; margin-inline: auto; text-align: center; }
+    .guarantee-stamp { display: flex; flex-direction: column; justify-content: center; align-items: center; flex: 0 0 156px; width: 156px; height: 156px; border: 3px dashed #E6A8B5; border-radius: 50%; outline: 7px solid #FCE7E6; color: #B85B72; transform: rotate(-9deg); }
+    .guarantee-stamp strong { font: 700 58px/.96 "Fraunces", Georgia, serif; }
+    .guarantee-stamp span { font-size: 15px; font-weight: 900; letter-spacing: .13em; text-transform: uppercase; }
+    .guarantee-stamp::after { content: "✦ ✦ ✦"; margin-top: 3px; font-size: 12px; letter-spacing: .07em; }
+    .guarantee-copy h2 { margin-bottom: 14px; }
+    .guarantee-copy p { margin: 0; color: #776C73; }
+    .faq-section { background: #FFFCF9; border-block: 1px solid #F6EBE7; }
+    .faq-list { display: grid; gap: 12px; max-width: 790px; margin: auto; }
+    details { border: 1px solid #EEE1E1; border-radius: 17px; background: #fff; overflow: hidden; }
+    details[open] { border-color: #E6BDC4; box-shadow: 0 7px 18px rgba(83,54,66,.04); }
+    summary { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 19px 19px; cursor: pointer; list-style: none; font-size: 14px; font-weight: 900; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; display: grid; place-items: center; flex: 0 0 25px; width: 25px; height: 25px; border-radius: 50%; background: #FBE8EB; color: #B45A70; font: 700 23px/1 "Nunito", sans-serif; }
+    details[open] summary::after { content: "−"; }
+    details p { margin: -1px 19px 20px; padding-right: 30px; color: #746873; font-size: 14px; line-height: 1.7; }
+    .final-cta { position: relative; overflow: hidden; padding: 78px 0 84px; background: var(--rosa); color: white; text-align: center; }
+    .final-cta::before, .final-cta::after { content: "✳"; position: absolute; color: rgba(255,255,255,.2); font-size: 150px; line-height: 1; }
+    .final-cta::before { left: -38px; top: -45px; }
+    .final-cta::after { right: -30px; bottom: -58px; }
+    .final-cta .container { position: relative; z-index: 1; }
+    .final-cta h2 { max-width: 630px; margin: 0 auto 27px; font-size: clamp(2.1rem, 6.5vw, 3.6rem); }
+    footer { padding: 27px 16px; text-align: center; color: #938089; font-size: 12px; font-weight: 800; }
+    @media (min-width: 640px) {
+      .container { width: min(100% - 56px, 1150px); }
+      .announcement { font-size: 12px; }
+      .hero { padding-top: 58px; }
+      .hero-desc { font-size: 17px; }
+      .btn { min-height: 61px; font-size: 14px; }
+      .audience-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .audience-card { padding: 26px 20px; }
+      .catalog-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .steps { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+      .bonus-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .bonus-featured { grid-column: 1 / -1; }
+      .plans-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .plan-complete { order: 0; }
+      .guarantee-wrap { flex-direction: row; gap: 50px; text-align: left; }
+    }
+    @media (min-width: 900px) {
+      .container { width: min(100% - 80px, 1150px); }
+      .brand-head { padding-top: 27px; }
+      .hero { padding: 58px 0 80px; }
+      .hero-grid { grid-template-columns: 1.05fr .95fr; gap: 52px; }
+      .mockup-stage { margin-right: 0; }
+      .mockup-cover { padding: 31px 28px 27px; }
+      .mockup-grid { gap: 12px; }
+      .mockup-tile { min-height: 110px; }
+      .section { padding: 97px 0; }
+      .section-heading { margin-bottom: 44px; }
+      .audience-grid { gap: 20px; }
+      .audience-card { padding: 31px 27px; }
+      .catalog-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 17px; }
+      .catalog-card { padding: 17px 12px 19px; }
+      .step { padding: 29px 26px; }
+      .difference-grid { grid-template-columns: 1fr 1fr; gap: 65px; }
+      .bonus-grid { gap: 17px; }
+      .bonus-featured { padding: 29px; }
+      .bonus-card { padding: 25px; }
+      .plan { padding-inline: 32px; }
+      .plan-complete { padding-top: 52px; }
+    }
+    @media (max-width: 379px) {
+      .brand-note { display: none; }
+      .hero { padding-top: 31px; }
+      .mockup-cover { padding-inline: 15px; }
+      .mockup-tile { min-height: 70px; }
+      .btn { padding-inline: 12px; font-size: 12px; }
+      .chip { font-size: 11px; }
+      .catalog-card h3 { font-size: 13px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .btn { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Ícones SVG locais: nenhuma foto, biblioteca de ícones ou requisição extra. -->
+  <svg class="icon-sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <symbol id="i-body" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"><path d="M35 14 20 23 12 42l17 8 8-10v37l13 10 13-10V40l8 10 17-8-8-19-15-9-8 9H43z"/><path d="M35 14q15 21 30 0M37 77l13-9 13 9M44 82h12"/><circle cx="46" cy="76" r="1.4"/><circle cx="54" cy="76" r="1.4"/></g></symbol>
+      <symbol id="i-macacao" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M37 12 21 20 12 37l16 8 7-9v47l13 2 2-25 2 25 13-2V36l7 9 16-8-9-17-16-8-7 8H44z"/><path d="M37 12q13 17 26 0M50 23v29M45 34h10M35 83h13M52 85h13"/><circle cx="50" cy="27" r="1"/><circle cx="50" cy="41" r="1"/></g></symbol>
+      <symbol id="i-vestido" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"><path d="m38 13-18 9-7 18 17 8 8-10 1 14-17 33q28 11 56 0L61 52l1-14 8 10 17-8-7-18-18-9-8 9H46z"/><path d="M38 13q12 17 24 0M39 52h22M33 77q17 7 34 0"/><path d="m44 32 6 5 6-5"/></g></symbol>
+      <symbol id="i-conjunto" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round"><path d="m27 17-13 8-7 15 13 7 7-8v19h37V39l7 8 13-7-7-15-13-8-7 7H34z"/><path d="M27 17q16 19 30 0M31 58l-5 28h16l5-19 5 19h16l-5-28M28 39h34"/><circle cx="46" cy="32" r="2"/></g></symbol>
+      <symbol id="i-mijao" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M29 18h42l3 18-12 50H51L49 57l-2 29H36L26 36zM29 18v12h42V18M47 30l2 27M36 86h11M51 86h11"/><path d="M33 37q8 5 15 0"/></g></symbol>
+      <symbol id="i-culote" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M26 27h48l-3 34-13 15-8-15-8 15-13-15zM26 27v10h48V27M33 60l9 16M67 60l-9 16M34 74l8 2M58 76l8-2"/><path d="M46 37h8"/></g></symbol>
+      <symbol id="i-jardineira" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M31 17h12v20h14V17h12v39l-8 29H51l-1-24-1 24H39l-8-29zM31 17l12-5M69 17l-12-5M31 38h38M37 47h26v15H37zM42 85h-8M58 85h8"/><circle cx="39" cy="24" r="2"/><circle cx="61" cy="24" r="2"/></g></symbol>
+      <symbol id="i-pijaminha" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="m35 11-16 9-9 18 14 8 10-13v28l12 2 4-18 4 18 12-2V33l10 13 14-8-9-18-16-9-9 9H44zM35 11q15 17 30 0M34 61l-4 24h16l4-22 4 22h16l-4-24"/><path d="m44 28 6 6 6-6M44 34h12"/></g></symbol>
+      <symbol id="i-casaquinho" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m37 13-19 9-9 43 16 6 10-27v41h30V44l10 27 16-6-9-43-19-9-13 14zM37 13l13 14 13-14M50 27v58M35 76h30"/><circle cx="56" cy="38" r="1.5"/><circle cx="56" cy="51" r="1.5"/><circle cx="56" cy="64" r="1.5"/></g></symbol>
+      <symbol id="i-touca" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 63q0-37 31-37t31 37M17 63h66v14H17zM35 63q-5-22 0-32M50 26v37M65 31q5 10 0 32"/><circle cx="50" cy="18" r="7"/><path d="M28 77q22 8 44 0"/></g></symbol>
+    </defs>
+  </svg>
+
+  <a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
+  <div class="announcement">🎀 PREÇO PROMOCIONAL DE LANÇAMENTO · ACESSO IMEDIATO</div>
+
+  <div class="container brand-head">
+    <a class="brand" href="#inicio" aria-label="Ateliê do Bebê, voltar ao início"><span class="brand-mark" aria-hidden="true">♡</span>Ateliê do Bebê</a>
+    <span class="brand-note">Feito com carinho ♡</span>
+  </div>
+
+  <main id="conteudo">
+    <!-- 1 / HERO -->
+    <section id="inicio" class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <span class="eyebrow">Para costureiras e iniciantes</span>
+            <h1 id="hero-title"><span class="pink">300 moldes</span> de roupinhas de bebê prontos para imprimir</h1>
+            <p class="hero-desc">Do recém-nascido aos 2 anos. Bodies, macacões, vestidinhos, conjuntinhos e muito mais — é só imprimir, cortar e costurar. Sem precisar saber modelar.</p>
+            <a class="btn btn-green" href="#planos">QUERO MEUS 300 MOLDES <span aria-hidden="true">→</span></a>
+            <div class="trust"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>Compra segura · Acesso imediato no celular · Garantia de 7 dias</span></div>
+          </div>
+          <div class="mockup-stage" aria-label="Ilustração da coleção de 300 moldes de roupas de bebê, RN aos 2 anos">
+            <div class="mockup-cover">
+              <div class="mockup-top">
+                <div>
+                  <div class="mockup-label">Coleção Ateliê do Bebê</div>
+                  <div class="mockup-number">300</div>
+                  <div class="mockup-title">moldes de roupas de bebê</div>
+                </div>
+                <span class="mockup-sprig" aria-hidden="true">✿</span>
+              </div>
+              <div class="mockup-grid" aria-hidden="true">
+                <div class="mockup-tile"><svg class="garment-icon"><use href="#i-body"/></svg></div>
+                <div class="mockup-tile"><svg class="garment-icon"><use href="#i-macacao"/></svg></div>
+                <div class="mockup-tile"><svg class="garment-icon"><use href="#i-vestido"/></svg></div>
+                <div class="mockup-tile"><svg class="garment-icon"><use href="#i-jardineira"/></svg></div>
+                <div class="mockup-tile"><svg class="garment-icon"><use href="#i-casaquinho"/></svg></div>
+                <div class="mockup-tile"><svg class="garment-icon"><use href="#i-touca"/></svg></div>
+              </div>
+              <div class="mockup-bottom"><span class="mini-line">Para imprimir, cortar & costurar ♡</span><span class="seal">RN aos 2 anos</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="benefits-strip" aria-label="Benefícios dos moldes">
+          <span class="chip"><span class="tick">✓</span>300 moldes selecionados</span>
+          <span class="chip"><span class="tick">✓</span>Organizados por peça e tamanho</span>
+          <span class="chip"><span class="tick">✓</span>Imprime em A4</span>
+          <span class="chip"><span class="tick">✓</span>Funciona no celular</span>
+          <span class="chip"><span class="tick">✓</span>Acesso vitalício</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 / PARA QUEM É -->
+    <section class="section" aria-labelledby="audience-title">
+      <div class="container">
+        <div class="section-heading"><p class="kicker">Feito para você</p><h2 id="audience-title">Para quem ama criar com as próprias mãos</h2></div>
+        <div class="audience-grid">
+          <article class="audience-card"><span class="audience-icon" aria-hidden="true">✂</span><h3>Iniciantes</h3><p>Nunca modelou? Não precisa. Os moldes já vêm prontos no tamanho certo: você imprime, corta o papel e transfere para o tecido.</p></article>
+          <article class="audience-card"><span class="audience-icon" aria-hidden="true">♧</span><h3>Costureiras</h3><p>Pare de perder tempo modelando peça pequena do zero. Atenda encomendas de roupinhas na hora, com o molde certo em cada tamanho.</p></article>
+          <article class="audience-card"><span class="audience-icon" aria-hidden="true">♡</span><h3>Quem quer renda extra</h3><p>Roupinha de bebê usa pouco tecido, vende o ano todo e é presente certo em chá de bebê e maternidade.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 / O QUE RECEBE -->
+    <section class="section catalog" aria-labelledby="catalog-title">
+      <div class="container">
+        <div class="section-heading"><p class="kicker">Sua coleção de moldes</p><h2 id="catalog-title">300 moldes separados por peça</h2><p>Encontre o modelo que você quer sem perder tempo procurando em pastas bagunçadas.</p></div>
+        <div class="catalog-grid">
+          <article class="catalog-card"><div class="catalog-icon"><svg class="garment-icon" aria-hidden="true"><use href="#i-body"/></svg></div><h3>Bodies</h3></article>
+          <article class="catalog-card"><div class="catalog-icon"><svg class="garment-icon" aria-hidden="true"><use href="#i-macacao"/></svg></div><h3>Macacões</h3></article>
+          <article class="catalog-card"><div class="catalog-icon"><svg class="garment-icon" aria-hidden="true"><use href="#i-vestido"/></svg></div><h3>Vestidinhos</h3></article>
+          <article class="catalog-card"><div class="catalog-icon"><svg class="garment-icon" aria-hidden="true"><use href="#i-conjunto"/></svg></div><h3>Conjuntinhos</h3></article>
+          <article class="catalog-card"><div class="catalog-icon"><svg class="garment-icon" aria-hidden="true"><use href="#i-mijao"/></svg></div><h3>Mijões</h3></article>
+          <article class="catalog-card"><div class="catalog-icon"><svg class="garment-icon" aria-hidden="true"><use href="#i-culote"/></svg></div><h3>Culotes</h3></article>
+          <article class="catalog-card"><div class="catalog-icon"><svg class="garment-icon" aria-hidden="true"><use href="#i-jardineira"/></svg></div><h3>Jardineiras</h3></article>
+          <article class="catalog-card"><div class="catalog-icon"><svg class="garment-icon" aria-hidden="true"><use href="#i-pijaminha"/></svg></div><h3>Pijaminhas</h3></article>
+          <article class="catalog-card"><div class="catalog-icon"><svg class="garment-icon" aria-hidden="true"><use href="#i-casaquinho"/></svg></div><h3>Casaquinhos</h3></article>
+          <article class="catalog-card"><div class="catalog-icon"><svg class="garment-icon" aria-hidden="true"><use href="#i-touca"/></svg></div><h3>Toucas</h3></article>
+        </div>
+        <div class="sizes"><p>Em todos os tamanhos:</p><div class="size-list"><span class="size-badge">RN</span><span class="size-badge">P</span><span class="size-badge">M</span><span class="size-badge">G</span><span class="size-badge">1 ano</span><span class="size-badge">2 anos</span></div></div>
+      </div>
+    </section>
+
+    <!-- 4 / COMO FUNCIONA -->
+    <section class="section how" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-heading"><p class="kicker">Simples de começar</p><h2 id="how-title">Do papel à roupinha em 3 passos</h2></div>
+        <div class="steps">
+          <article class="step"><span class="step-number">01</span><h3>Imprima</h3><p>Escolha o molde e imprima em folha A4 comum, em casa ou na gráfica.</p></article>
+          <article class="step"><span class="step-number">02</span><h3>Monte e corte</h3><p>Junte as folhas, recorte o molde e risque no tecido.</p></article>
+          <article class="step"><span class="step-number">03</span><h3>Costure</h3><p>Costure as partes e pronto: roupinha de bebê feita por você.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 / DIFERENCIAIS -->
+    <section class="section" aria-labelledby="difference-title">
+      <div class="container difference-grid">
+        <div class="difference-copy"><p class="kicker">Uma coleção pensada para facilitar</p><h2 id="difference-title">Selecionados, não amontoados</h2><p>Nada de pasta gigante e bagunçada onde você nunca acha o que precisa. Aqui é só roupa de bebê, organizada para você achar o molde em segundos.</p><a class="btn btn-green" href="#planos">QUERO MEUS 300 MOLDES <span aria-hidden="true">→</span></a></div>
+        <div class="difference-list" aria-label="Diferenciais da coleção"><div class="difference-item">Só roupa de bebê</div><div class="difference-item">Organizado por peça e tamanho</div><div class="difference-item">Imprime em folha A4</div><div class="difference-item">Acesso pelo celular, para sempre</div></div>
+      </div>
+    </section>
+
+    <!-- 6 / BÔNUS -->
+    <section class="section bonus-section" aria-labelledby="bonus-title">
+      <div class="container">
+        <div class="section-heading"><p class="kicker">Exclusivo do Plano Completo</p><h2 id="bonus-title">Mais 6 presentes para criar ainda mais ♡</h2><p>Além dos 300 moldes, o Plano Completo libera todos estes bônus sem custo extra.</p></div>
+        <div class="bonus-grid">
+          <article class="bonus-card bonus-featured"><div class="bonus-illustration"><svg class="garment-icon" aria-hidden="true"><use href="#i-conjunto"/></svg></div><div><p class="bonus-number">BÔNUS 01 · ESPECIAL</p><h3>Saída de Maternidade Completa</h3><p>Para preparar aquele conjuntinho especial dos primeiros dias.</p><div class="bonus-value"><del>De R$37</del><strong>GRÁTIS</strong></div></div></article>
+          <article class="bonus-card"><div class="bonus-illustration"><span aria-hidden="true" style="font-size:34px">🎄</span></div><div><p class="bonus-number">BÔNUS 02</p><h3>Kit Natal do Bebê 🎄</h3><div class="bonus-value"><del>R$27</del><strong>GRÁTIS</strong></div></div></article>
+          <article class="bonus-card"><div class="bonus-illustration"><span aria-hidden="true" style="font-size:30px">✎</span></div><div><p class="bonus-number">BÔNUS 03</p><h3>Guia da Iniciante</h3><p>Passo a passo para imprimir, montar, cortar e transferir o molde.</p><div class="bonus-value"><del>R$27</del><strong>GRÁTIS</strong></div></div></article>
+          <article class="bonus-card"><div class="bonus-illustration"><span aria-hidden="true" style="font-size:32px">R$</span></div><div><p class="bonus-number">BÔNUS 04</p><h3>Quanto Cobrar por Cada Roupinha</h3><div class="bonus-value"><del>R$27</del><strong>GRÁTIS</strong></div></div></article>
+          <article class="bonus-card"><div class="bonus-illustration"><span aria-hidden="true" style="font-size:30px">↔</span></div><div><p class="bonus-number">BÔNUS 05</p><h3>Tabela de Medidas do Bebê</h3><div class="bonus-value"><del>R$17</del><strong>GRÁTIS</strong></div></div></article>
+          <article class="bonus-card"><div class="bonus-illustration"><svg class="garment-icon" aria-hidden="true"><use href="#i-body"/></svg></div><div><p class="bonus-number">BÔNUS 06</p><h3>Tecidos Ideais para Bebê</h3><div class="bonus-value"><del>R$17</del><strong>GRÁTIS</strong></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7 / PLANOS: substitua CHECKOUT_BASICO e CHECKOUT_COMPLETO pelas URLs reais antes de publicar. -->
+    <section class="section plans-section" id="planos" aria-labelledby="plans-title">
+      <div class="container">
+        <div class="section-heading"><p class="kicker">Escolha o seu acesso</p><h2 id="plans-title">Um preço pequeno. Muitas roupinhas para criar.</h2><p>Pagamento único, sem mensalidade, com acesso vitalício.</p></div>
+        <div class="plans-grid">
+          <article class="plan plan-basic" aria-label="Plano Básico, R$10">
+            <span class="plan-kicker">Comece por aqui</span><h3>Plano Básico</h3><p class="plan-desc">Todos os moldes que você precisa para começar.</p>
+            <ul class="plan-list">
+              <li>300 moldes de roupas de bebê</li><li>Do RN aos 2 anos</li><li>Acesso imediato e vitalício</li>
+              <li class="unavailable">Saída de Maternidade</li><li class="unavailable">Kit Natal do Bebê</li><li class="unavailable">Guia + 3 bônus extras</li>
+            </ul>
+            <div class="plan-bottom"><p class="old-price"><del>De R$47</del></p><p class="price"><small>R$</small>10</p><p class="price-note">pagamento único</p><a class="btn btn-blue btn-full checkout-link" href="CHECKOUT_BASICO" data-checkout="básico">QUERO O BÁSICO</a></div>
+          </article>
+          <article class="plan plan-complete" aria-label="Plano Completo, R$27, mais escolhido">
+            <div class="plan-ribbon">⭐ MAIS ESCOLHIDO</div><span class="plan-kicker">A coleção completa</span><h3>Plano Completo</h3><p class="plan-desc">Todos os moldes, mais os 6 bônus especiais.</p>
+            <ul class="plan-list">
+              <li>300 moldes de roupas de bebê</li><li>Do RN aos 2 anos</li><li>Acesso imediato e vitalício</li>
+              <li>Saída de Maternidade Completa</li><li>Kit Natal do Bebê</li><li>Guia da Iniciante</li><li>Quanto Cobrar por Cada Roupinha</li><li>Tabela de Medidas do Bebê</li><li>Tecidos Ideais para Bebê</li>
+            </ul>
+            <div class="plan-bottom"><p class="old-price"><del>De R$199</del></p><p class="price"><small>R$</small>27</p><p class="price-note">pagamento único · tudo incluso</p><a class="btn btn-green btn-full checkout-link" href="CHECKOUT_COMPLETO" data-checkout="completo">QUERO O COMPLETO <span aria-hidden="true">→</span></a></div>
+          </article>
+        </div>
+        <p class="plans-trust">🔒 Pagamento 100% seguro · Receba o acesso no seu e-mail na hora</p>
+        <p class="checkout-note" id="checkout-note" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <!-- 8 / GARANTIA -->
+    <section class="section" aria-labelledby="guarantee-title">
+      <div class="container guarantee-wrap">
+        <div class="guarantee-stamp" aria-label="Garantia de 7 dias"><strong>7</strong><span>dias</span></div>
+        <div class="guarantee-copy"><p class="kicker">Seu pedido protegido</p><h2 id="guarantee-title">7 dias para testar com tranquilidade</h2><p>Acesse os moldes, imprima, teste. Se achar que não é para você, é só pedir o reembolso dentro de 7 dias e devolvemos 100% do valor.</p></div>
+      </div>
+    </section>
+
+    <!-- ESPAÇO RESERVADO PARA PRINTS REAIS DE CLIENTES: inserir apenas depoimentos autênticos, com autorização. -->
+
+    <!-- 9 / PERGUNTAS FREQUENTES -->
+    <section class="section faq-section" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-heading"><p class="kicker">Tire suas dúvidas</p><h2 id="faq-title">Perguntas frequentes</h2></div>
+        <div class="faq-list">
+          <details><summary>Preciso saber modelar?</summary><p>Não, os moldes já vêm prontos no tamanho certo.</p></details>
+          <details><summary>Sou iniciante, consigo usar?</summary><p>Sim; o Plano Completo traz o Guia da Iniciante.</p></details>
+          <details><summary>Quais tamanhos tem?</summary><p>RN, P, M, G, 1 ano e 2 anos.</p></details>
+          <details><summary>Preciso de impressora especial?</summary><p>Não, imprime em A4 comum.</p></details>
+          <details><summary>Como recebo o acesso?</summary><p>No e-mail, logo após o pagamento.</p></details>
+          <details><summary>Posso vender as roupinhas que eu costurar?</summary><p>Sim; só não é permitido revender os arquivos dos moldes.</p></details>
+          <details><summary>O acesso é vitalício?</summary><p>Sim, pagamento único, sem mensalidade.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10 / CHAMADA FINAL -->
+    <section class="final-cta" aria-labelledby="final-title">
+      <div class="container"><h2 id="final-title">A próxima roupinha de bebê pode ser feita por você</h2><a class="btn btn-white" href="#planos">QUERO MEUS 300 MOLDES <span aria-hidden="true">→</span></a></div>
+    </section>
+  </main>
+  <footer>© 2026 Ateliê do Bebê · Todos os direitos reservados.</footer>
+
+  <script>
+    // Protege os visitantes de links inexistentes enquanto os checkouts não forem configurados.
+    // Para ativar as vendas, substitua os hrefs CHECKOUT_BASICO e CHECKOUT_COMPLETO por URLs HTTPS reais.
+    document.querySelectorAll('.checkout-link').forEach(function (link) {
+      link.addEventListener('click', function (event) {
+        if (/^CHECKOUT_(BASICO|COMPLETO)$/.test(link.getAttribute('href') || '')) {
+          event.preventDefault();
+          document.getElementById('checkout-note').textContent = 'O link de pagamento ainda não foi configurado. Entre em contato com a loja.';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
